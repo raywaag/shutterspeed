@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ShutterSpeed > Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar">
+
+      <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+      </span>
+
+        <a href="index.html" class="logo"><img src="img/shutterspeed_logo_slogan.png" alt="ShutterSpeed Logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="featured.html" class="nav-links">Featured Moments</a></li>
+            <li><a href="jobs.html" class="nav-links">Job Board</a></li>
+            <li><a href="sign_up.html" class="nav-links enlarged">Sign Up</a></li>
+            <li><a href="login.html" class="nav-links login">Login</a></li>
+        </ul>
+    </nav>
+
+  <div class="section bg">
+    <div class="container center" style="margin-left:5%">
+      <h1>Sign Up</h1>
+      <h1 class="amount">Already have an account? <a href="login.html">Login!</a></h1>
+    </div>
+  </div>
+
+<div class="container">
+  <form method="POST" action="profile.html" style="margin-left:-10%;">
+          Name: <br />
+          <input type="text" name="email"><br />
+          Company (if applicable): <br />
+          <input type="text" name="email"><br />
+          Email: <br />
+          <input type="text" name="email"><br />
+          Primary Location: <br />
+          <input type="text" name="city" ><br />
+          Username: <br />
+          <input type="text" name="username" id="username" autocomplete="off"><br/>
+          Password: <br />
+          <input type="text" name="password" id="password" autocomplete="off"><br />
+          Re-Enter Password: <br />
+          <input type="text" name="password" id="password1" autocomplete="off"><br />
+          <input style="background-color:lightblue; margin-left:-1%;" class="submit" type="submit" value="Login!" />
+  </form>
+</div>
+
+  <div class="section">
+    <footer>
+      <div class="container white">
+        <p>Copyright 2018. ShutterSpeed. All rights reserved.<p>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <script>
+
+  //sidenav
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("more").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("more").style.marginLeft= "0";
+  }
+
+
+
+  //slideshow
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+</body>
+</html>

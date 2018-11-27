@@ -1,0 +1,419 @@
+/* -------- Navigation -------- */
+.navbar {
+    padding-bottom: 10px;
+    background-color : rgba(0, 0, 0, 0);
+		}
+		.main-nav {
+		    list-style-type: none;
+		    display: none;
+		}
+			.nav-links,
+			.logo {
+			    text-decoration: none;
+			    color: #769FB6;
+			}
+			.nav-links{
+				font-family: 'Julius Sans One', sans-serif;
+			  font-size: 18px;
+			  margin-right: 30px;
+			}
+        .nav-links.enlarged{
+          background-color: #EA5B41;
+          color: white;
+          padding: 10px;
+          margin-right: 20px;
+  			}
+        .nav-links.login{
+  			  color: lightgrey;
+  			}
+			.nav-links:hover{
+			  opacity: 0.5;
+			}
+
+			.main-nav li {
+			    text-align: center;
+			    margin: 15px auto;
+			}
+			.logo img{
+					width: 250px;
+          height: auto;
+			    display: inline-block;
+          padding: 20px 0 20px 5px;
+			}
+
+
+			.navbar-toggle {
+			    position: absolute;
+					margin: 20px 15px 0 0;
+			    right: 20px;
+			    cursor: pointer;
+			    color: #434343;
+			    font-size: 24px;
+			}
+
+			.active {
+			  display: block;
+			}
+/* ---------- Navbar Responsiveness ---------- */
+	@media screen and (min-width: 990px) {
+	    .navbar {
+	        display: flex;
+	        justify-content: space-between;
+	        padding-bottom: 0;
+	        height: 70px;
+	        align-items: center;
+	    }
+	    .main-nav {
+	        display: flex;
+	        margin-right: 80px;
+	        flex-direction: row;
+	        justify-content: flex-end;
+	    }
+	    .main-nav li {
+	        margin: 0;
+	    }
+	    .nav-links {
+	        margin-left: 3vw;
+          background-color: white;
+	    }
+	    .logo {
+	        margin-top: 0;
+	    }
+	   .navbar-toggle {
+	       display: none;
+	    }
+	    .logo:hover,
+	    .nav-links:hover {
+	        opacity: 0.5;
+	    }
+	}
+
+
+
+
+
+/* ----- Responsiveness ----- */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/* -------------------------- Photo Grid -------------------------- */
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create 4 equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE 10 */
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
+
+
+/* -------------------------- Body -------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+h1{
+  font-size: 45px;
+  color: #63b1ae;
+}
+h1 a{
+  color: grey;
+}
+    .container h1:after {
+      content: "";
+      width: 80px;
+      position: relative;
+      border-bottom: 1px solid #aaa;
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-top: 15px;
+    }
+    .container h1.title:after {
+      display:none;
+    }
+    .container .col.two h1:after {
+      display:none;
+    }
+h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+.col p,
+.col h1 {
+  padding: 0 1%;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.section {
+  width: 100%;
+}
+  .section .container {
+    padding: 30px 0 50px 0;
+  }
+    .section.bg {
+      background: #f7f7f7;
+    }
+    .section .mast.home {
+      background-image: url(../img/landing_mast.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  font-weight: 300;
+  overflow: hidden;
+}
+    .container h1 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .container ul{
+      font-size: 20px;
+    }
+      .list-center{
+        list-style-type: none;
+        text-align: center;
+      }
+.mastcontent {
+  text-align: center;
+}
+  .mastcontent input{
+    width: 200px;
+    height: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+.fa.fa-search{
+  color: lightgrey;
+}
+
+  .title {
+    color: #b18663;
+    font-family: 'Josefin Slab', serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 100px;
+    text-shadow: 2px 2px 5px grey;
+    margin-top: -2%;
+  }
+
+footer {
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+/*  used on adopt.html only  */
+.noted{
+  width: 60%;
+  font-size: 16px;
+  margin: 0 25% 0 25%;
+}
+.question{
+  text-align: center;
+  font-size:55px;
+}
+
+.adopt{
+  margin: 20px;
+}
+  .adopt.right{
+    text-align: right;
+    margin:-10% 0 0 0;
+  }
+  .adopt.center{
+    margin-left: 33%;
+  }
+  .adopt span {
+    color: #ad9a8a;
+    display: block;
+    display: inline;
+    border: 1px solid #ad9a8a;
+    padding: 8px 13px;
+    font-size: 20px;
+  }
+      .adopt span a{
+        text-decoration: none;
+        color:#ad9a8a;
+      }
+        .adopt span:hover {
+          background: #eae6e3;
+        }
+.mission{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+.amount{
+  font-size: 30px;
+}
+  .amount.number{
+    font-size: 80px;
+  }
+.icons figure {
+    width: 25%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+  .icons figure img{
+      width: 50%;
+  }
+  .icons figure figcaption{
+      margin-top: 10px;
+  }
+
+
+/*  map and volunteer images  */
+.col.two img{
+  width: 95%;
+  height: auto;
+}
+
+
+/* -------- Form ----- */
+
+
+/*Form*/
+fieldset{
+  color: black;
+}
+fieldset legend{
+}
+form{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+.submit{
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 10%;
+  color: white;
+  background-color: salmon;
+  margin: 30px 0 50px 0;
+}
+form .submit:hover{
+  border: 1px solid lightblue;
+  box-shadow:
+    0 0 60px 10px #fff,
+    0 0 100px 10px #74919B,
+    0 0 140px 10px #0ff;
+}
+
+/* ------------- Columns ------------- */
+.col {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+  .col.two {
+    width: 40%;
+    margin: 0 2.5%;
+    padding: 0 2.5%;
+  }
+  .col.padded {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .col.bg {
+    background: #FFF;
+  }
+
+
+
+
+/* -------------- Responsiveness -------------- */
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+    .container.image{
+      background-image: url(img/tumblr_oh2od7SXRe1s2tva9o1_1280.jpg);
+    }
+  .section .mast {
+    background-color: white;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.padded {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+}
